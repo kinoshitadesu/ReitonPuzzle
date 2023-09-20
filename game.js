@@ -108,6 +108,7 @@ function drawBlock(x, y, c){
     con.fillRect(px, py, BLOCK_SIZE, BLOCK_SIZE);
     con.strokeStyle = "black";
     con.strokeRect(px, py, BLOCK_SIZE, BLOCK_SIZE);
+    
 }
 
 function drawBlock2(x, y, c){
@@ -117,6 +118,7 @@ function drawBlock2(x, y, c){
     con.fillStyle = TETRO_COLORS[c];
     con.fillRect(px, py, BLOCK_SIZE, BLOCK_SIZE);
     con.strokeStyle = "black";
+    
 
 }
 
@@ -184,7 +186,7 @@ function checkMove(mx, my, i){
     }
     
     cnt++;
-    info.innerHTML =  cnt + "手";
+    info.innerHTML =  "娘（茶色）を救出して！ 現在：" + cnt + "手";
     return true;
 }
 
